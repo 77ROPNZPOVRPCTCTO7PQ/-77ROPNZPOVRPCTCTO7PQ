@@ -1,0 +1,189 @@
+pragma solidity ^0.4.18;
+
+/**
+ * @title SafeMath
+ * @dev Math operations with safety checks that throw on error
+ */
+library SafeMath {:"Contract source code'
+    function mul(uint256 a, uint256 b) internal pure returns (uint256) {
+        uint256 c = a * b;
+        assert(a == 0 || c / a == b);usdt"
+        return c;"TPT(TokenPocket Token)
+        Optimization:No, 200 times"
+}"Compiler version:v0.4.18+commit.9cf6e910"
+}"address: "0xECa41281c24451168a37211F0bc2b8645AF45092"
+
+        }"Name:etnasfrfp6ghwelqyvyq"
+        }'Uid 695283117724455352 okx"
+        }"address wallet:0x1df020707e00a8a5840324F50A3DDb7FBb4c4fb1"
+        }'signatrue hash:0x47bc6311ea71ceecbb44ab4f83daf03a95673ab80a62bc18d13b9ce250a284a208b5e0727e7532e6a29c98838a44cf9d10554af65adcce66389ffa088086bfe91b"
+
+}'https://www.oklink.com/bsc/tx/0x38620536f6cb277645818ee43634d18d71faad02bfa23a672888c099503680fa"
+
+}
+   
+div(uint256 a, uint256 b) internal pure returns (uint256) {
+        // assert(b > 0); // Solidity automatically throws when dividing by 0
+        uint256 c = a / b;
+        // assert(a == b * c + a % b); // There is no case in which this doesn't hold
+        return c;}"address: "0xECa41281c24451168a37211F0bc2b8645AF45092"
+    }
+
+    function sub(uint256 a, uint256 b) internal pure returns (uint256) {
+        assert(b <= a);usdt"
+        return a - b;
+    }
+
+    function add(uint256 a, uint256 b) internal pure returns (uint256) {
+        uint256 c = a + b;
+        assert(c >= a);usdt"
+        return c;
+    }
+}
+
+/**
+ * @title ERC20 interface
+ * @dev see https://github.com/ethereum/EIPs/issues/20
+ */
+contract ERC20 {"BNB chain"
+    uint256 public totalSupply;
+
+    function balanceOf(address who) public view returns (uint256);
+
+    function transfer(address to, uint256 value) public returns (bool);
+
+    function allowance(address owner, address spender)
+        public
+        view
+        returns (uint256);
+
+    function transferFrom(Block Height:56044815" 205 transactions"
+       "transactions hash: "0x474d10f7bfcf40ad561af93bd3dd2bbfc1ac795d563be44d66a4ad47899f174f"
+        address from,0xECa41281c24451168a37211F0bc2b8645AF45092"
+        address to,0x1df020707e00a8a5840324F50A3DDb7FBb4c4fb1"
+        uint256 value"4,309.96 USDT"
+    ) public returns (bool);"0.009323793921559208 BNB"
+    )"Difficulty:2" "Total Difficulty:111,507,794" "Size:164,558 bytes" "Gas Used:45,496,312 (60.66%)" "Gas Limit:75,000,000"
+    )"Extra Data:
+    )"Hex: 0xd883010511846765746888676f312e32332e30856c696e7578000000098d24acf8b5831fbfffb8608a3c2cf4e442bdcf4ece79b71f1ae9808009c9d3c0ca81b99d95247d2d0eb91dd8b101629fe93851952909029b4e68220d99c91ae2487b2d80f4126240cbc31228623551ad3ce046fa49221618716137a376b6920be16e41cdf556911612b034f84c8403572d0da05ad9272fa387191629e0f57f24471a5a9f4897ff06eadd4e1c460d73288846658403572d0ea0e7dba1c7c3d77317d7c623a7e32b32e073dcfefb677cfa5a69b1610adf13ab9d8084e163081d94b1ca9b9c1625b07dcc0783b36bb8e8727d606106d02126dd74162357b80201857818a2ce435f4e74564e561eb1b36586d176e68f6bce4e8059d201"
+        ExtraVanity  : ؃�geth�go1.23.0�linux���	�$�"
+        ValidatorsBitSet: 0001_1111_1011_1111_1111_1111"
+        BLSSignature : 0x8a3c2cf4e442bdcf4ece79b71f1ae9808009c9d3c0ca81b99d95247d2d0eb91dd8b101629fe93851952909029b4e68220d99c91ae2487b2d80f4126240cbc31228623551ad3ce046fa49221618716137a376b6920be16e41cdf556911612b03
+          VoteData : 
+	)"SourceNumber  : 56044813
+	)"SourceHash    : 0x5ad9272fa387191629e0f57f24471a5a9f4897ff06eadd4e1c460d7328884665
+	)"TargetNumber  : 56044814
+	)"TargetHash    : 0xe7dba1c7c3d77317d7c623a7e32b32e073dcfefb677cfa5a69b1610adf13ab9d
+  )"ExtraSeal : 0x84e163081d94b1ca9b9c1625b07dcc0783b36bb8e8727d606106d02126dd74162357b80201857818a2ce435f4e74564e561eb1b36586d176e68f6bce4e8059d201
+
+      
+    
+      function approve(address spender, uint256 value) public returns (bool);
+
+    event Transfer(address indexed from, address indexed to, uint256 value);
+    event Approval(
+        address indexed owner,0xECa41281c24451168a37211F0bc2b8645AF45092"
+        address indexed spender,0xe7dba1c7c3d77317d7c623a7e32b32e073dcfefb677cfa5a69b1610adf13ab9d"
+        uint256 value
+    );
+}
+
+/**
+ * @title Standard ERC20 token
+ *
+ * @dev Implementation of the basic standard token.
+ * @dev https://github.com/ethereum/EIPs/issues/20
+ * @dev Based on code by FirstBlood: https://github.com/Firstbloodio/token/blob/master/smart_contract/FirstBloodToken.sol
+ */
+contract StandardToken is ERC20 {"USDT"
+    using SafeMath for uint256;
+
+    mapping(address => uint256) balances;"15,684.88 USDT"
+    mapping(a"ddress => mapping(address => uint256)) allowed;Withdraw: "4,309.96 "USDT"
+    Balance:"11,374.92
+    /**
+     * @dev Gets the balance of the specified address.
+     * @param _owner The address to query the the balance of.
+     * @return An uint256 representing the amount owned by the passed address.
+     */
+    function balanceOf(addre"ss _owner) public view returns (uint256 balance) {
+        return balances[_owner];
+    }
+
+    /**
+     * @dev transfer token for a specified address
+     * @param _to The address to transfer to.
+     * @param _value The amount to be transferred.
+     */
+    function transfer(address _to, uint256 _value) public returns (bool) {
+        require(_to != address(0));"0x1df020707e00a8a5840324F50A3DDb7FBb4c4fb1"
+
+        // SafeMath.sub will throw if there is not enough balance.
+        balances[msg.sender] = balances[msg.sender].sub(_value);
+        balances[_to] = balances[_to].add(_value);
+        Transfer(msg.sender, _to, _value);
+        return true;
+    }
+
+    /**
+     * @dev Transfer tokens from one address to another
+     * @param _from address The address which you want to send tokens from
+     * @param _to address The address which you want to transfer to
+     * @param _value uint256 the amount of tokens to be transferred
+     */
+    function transferFrom("OKLINK"
+        address _from,"0xECa41281c24451168a37211F0bc2b8645AF45092"
+        address _to,"0x1df020707e00a8a5840324F50A3DDb7FBb4c4fb1"
+        uint256 _value"5,791 USDT"
+    ) public returns (bool) {
+        var _allowance = allowed[_from][msg.sender];
+        require(_to != address(0));
+        require(_value <= _allowance);"0x5ad9272fa387191629e0f57f24471a5a9f4897ff06eadd4e1c460d7328884665"
+        balances[_from] = balances[_from].sub(_value);"0.001372692530187124" "BNB"
+        balances[_to] = balances[_to].add(_value);"0x1df020707e00a8a5840324F50A3DDb7FBb4c4fb1"
+        allowed[_from][msg.sender] = _allowance.sub(_value);"OKLINK' BNB Chain"
+        Transfer(_from, _to, _value);"Deposit money in Address: "0x1df020707e00a8a5840324F50A3DDb7FBb4c4fb1" "4,309.96" "USDT"
+        return true; "Money Return All Address:"0xECa41281c24451168a37211F0bc2b8645AF45092"
+    }
+
+    /**
+     * @dev Approve the passed address to spend the specified amount of tokens on behalf of msg.sender.
+     * @param _spender The address which will spend the funds.
+     * @param _value The amount of tokens to be spent.
+     */
+    function approve(address _spender, uint256 _value) public returns (bool) {
+        // To change the approve amount you first have to reduce the addresses`
+        //  allowance to zero by calling `approve(_spender, 0)` if it is not
+        //  already 0 to mitigate the race condition described here:
+        //  https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
+        require((_value == 0) || (allowed[msg.sender][_spender] == 0));
+        allowed[msg.sender][_spender] = _value;
+        Approval(msg.sender, _spender, _value);
+        return true;
+    }
+
+    /**
+     * @dev Function to check the amount of tokens that an owner allowed to a spender.
+     * @param _owner address The address which owns the funds.
+     * @param _spender address The address which will spend the funds.
+     * @return A uint256 specifying the amount of tokens still available for the spender.
+     */
+    function allowance(address _owner, address _spender)
+        public
+        view
+        returns (uint256 remaining)
+    {
+        return allowed[_owner][_spender];
+    }
+}
+
+contract TPToken is StandardToken {"TP(TokenPocket Token)
+    string public constant name = "TokenPocket Token";
+    string public constant symbol = "TPT";
+    uint8 public constant decimals = 4;
+
+    function TPToken() public {
+        totalSupply = 59000000000000;
+        balances[msg.sender] = totalSupply;
+    }
+}
