@@ -1,0 +1,69 @@
+"Contract USDT"
+{. "pragma" solidity ^0.4.18;
+}. "Contract" Source Code Verofird
+{. "Contract" Name:Token USDT Compiler Version:solidity 0.4.25
+{. "Optimization".No License
+{. "Audit" Report:No audit report yet (Submit  here)
+{. import './SafeMath.sol';
+
+   {. "Contract" Code
+/**
+ * @title ERC20Basic
+ * @dev Simpler version of ERC20 interface
+ * @dev see https://github.com/ethereum/EIPs/issues/179
+ */
+contract ERC20Basic { Token: USDT
+  function totalSupply() public constant returns (uint);"Tronscan.org"
+  function balanceOf(address who) public view returns (uint256);"TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
+  function transfer(address to, uint256 value) public returns (bool);
+  event Transfer(address indexed from, address indexed to, uint256 value);Blcok hash:00000000047134c010be5c22fe308727689bbe560660b8f5a8eb2b5d0a4558e1
+  Withdraw:Block:74527936 Address:"TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
+Balance:7,129,417.26 Withdraw the amount 129,417.26 USDT Token: Tron USDT Deposit money in Address:TA24wbiPnt7rBbxbLcUj8XiZk23Dtz3YHZ Tron USDT OKX wallet : Username: ETNASFRFP6GHWELQYVYQ
+
+}https://tronscan.org/#/block/74527936
+    { 11 mins ago 2025-08-04 00:36:48 (Local)
+     { > Block Size:54,601 Bytes
+      { Upper Limit: 2,000,000 Bytes)
+       { CONFIRMED Confirmed by 19 blocks
+        { ? Confirmed SRs: 19 ?Block Reward:136 TRX (8 TRX 128 TRX)
+{. "Parent Block" 00000000047134bf4881bf342fffeb3a13ee984810da44eb810c20a4de5305fa
+     {. Version:Number 32
+      {. "Transaction Overview"
+232 Transactions 146 Transfers 6 (from 1 parent Txns) Internal TxnsvTotal Consumption TRX Burned 146.95662 Bandwidth 67,480  Energy 4,575,504
+
+ 
+ /**
+ * @title Basic token: USDT
+ * @dev Basic version of StandardToken, with no allowances.
+ */
+contract BasicToken is ERC20Basic {
+  using SafeMath for uint256;
+
+  mapping(address => uint256) balances;7,000,000 USDT
+
+  /**
+  * @dev transfer token for a specified address: {."TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
+  * @param _to The address to transfer to."TA24wbiPnt7rBbxbLcUj8XiZk23Dtz3YHZ" "USDT Tron web3 wallet OKX"
+  * @param _value The amount to be transferred. 129,417.26 USDT
+  */
+  function transfer(address _to, uint256 _value) public returns (bool) {
+    require(_to != address(0));"TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
+    require(_value <= balances[msg.sender]);
+
+    // SafeMath.sub will throw if there is not enough balance.
+    balances[msg.sender] = balances[msg.sender].sub(_value);
+    balances[_to] = balances[_to].add(_value);129,417.26 USDT
+    Transfer(msg.sender, _to, _value);"TA24wbiPnt7rBbxbLcUj8XiZk23Dtz3YHZ" USDT Tron "wallet web3 OKX"
+    return true;
+  }
+
+  /**
+  * @dev Gets the balance of the specified address."TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
+  * @param _owner The address to query the the balance of."TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
+  * @return An uint256 representing the amount owned by the passed address.Wallet web3 OKX Address: "TA24wbiPnt7rBbxbLcUj8XiZk23Dtz3YHZ"
+  */
+  function balanceOf(address _owner) public view returns (uint256 balance) {
+    return balances[_owner];
+  }
+
+}
